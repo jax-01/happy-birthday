@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffebcd;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .overlay {
+  margin-bottom: 10vw;
+}
+
+.container > div > button {
+  border-radius: 5px;
+  /* border: none; */
+  border: 2px solid orange;
+  width: 12rem;
+  height: 2rem;
+  color: white;
+  font-weight: 300;
+  background-color: orange;
+}
+
+.container > div > button:hover {
+  font-weight: 700;
+  width: 15rem;
+  cursor: pointer;
+}
+
+.cake {
+  width: 100px;
+  height: 150px;
+  background-color: #ff69b4;
+  border-radius: 10px;
+  position: relative;
+}
+
+.candle {
+  width: 10px;
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: -50px;
+  left: 45px;
+  border-radius: 5px;
+}
+
+.flame {
+  width: 10px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  animation: flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); }
+  100% { transform: scale(0.9); }
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: #d2691e;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+#birthdayCelebrant {
+  width: 250px;
+}

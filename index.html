@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="startOverlay" class="overlay">
+      <button id="startButton">Click here to blow the candle</button>
+    </div>
+    <div class="cake">
+      <div class="candle">
+        <div class="flame" id="flame"></div>
+      </div>
+    </div>
+    <h1 id="birthdayMessage" class="hidden">Happy Birthday, baby boe!!</h1>
+    <img id="birthdayCelebrant" class="hidden" src="./bb.png" alt="bb boe">
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="candleSound" src="./candle.mp3"></audio>
+  <audio id="birthdayMusic" src="./confetti.mp3"></audio>
+
+  <script src="./script.js"></script>
+</body>
+</html>
